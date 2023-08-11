@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 /**
- *  * main - runs the all the code
- *   *
- *    * Description: Run puts and print statement
- *     * Return: Return 0 to exit function
- *      */
+ * main - The main function
+ * Description: Run puts and prints a statement
+ * Return: Return 0 to exit function
+ * /
 
 int main(void)
 {
