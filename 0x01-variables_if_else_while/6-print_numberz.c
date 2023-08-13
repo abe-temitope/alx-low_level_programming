@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * mian - A single digit of base ten
+ * main - A single digit of base ten
  *
  * Return: Always 0 (Success)
  */
