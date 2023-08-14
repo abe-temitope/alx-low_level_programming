@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 /**
- * main - print 2 digit combos
+ * main - print combos without repeats
  *
  * Return: 0
  */
@@ -15,13 +15,20 @@ int main(void)
 		s = '0';
 		while (s <= '9')
 		{
-			putchar(f);
-			putchar(s);
-			if (s == '9' && f == '9')
+			if (s == f)
+			{
+			}
+			else if (f > s)
 			{
 			}
 			else
 			{
+				putchar(f);
+				putchar(s);
+				if (s == '9' && f == '8')
+				{
+					break;
+				}
 				putchar(',');
 				putchar(' ');
 			}
