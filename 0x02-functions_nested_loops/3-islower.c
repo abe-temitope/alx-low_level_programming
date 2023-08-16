@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include "main.h"
 
 /**
  * _islower- Check for lowercase.
@@ -12,7 +12,3 @@ int _islower(int c)
 	else
 		return (0);
 }
-~
-~
-~
-
