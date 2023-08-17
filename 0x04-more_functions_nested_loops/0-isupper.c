@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * _isupper - Find if a letter is uppercase.
  * @c: the given letter
