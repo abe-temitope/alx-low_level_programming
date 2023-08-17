@@ -1,3 +1,6 @@
+#include "main.h"
+#include <stdio>
+
 /**
  * _isupper - Find if an <F11>argument letter is uppercase
  * @c: the given letter
