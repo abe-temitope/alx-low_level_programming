@@ -1,13 +1,21 @@
-int _putchar(char);
-void print_alphabet(void);
-void print_alphabet_x10(void);
-int _islower(int);
-int _isalpha(int);
-int print_sign(int);
-int _abs(int);
-int print_last_digit(int);
-void jack_bauer(void);
-void times_table(void);
-int add(int, int);
-void print_to_98(int);
-void print_times_table(int);
+#include <stdlib.h>
+
+/**
+ * File: main.h
+ * Auth: Abe Temitope m.
+ * Desc: Header file containing prototypes for all functions
+ *       used in the 0x05-pointers_arrays_strings directory.
+ */
+
+int _putchar(char c);
+void reset_to_98(int *n);
+void swap_int(int *a, int *b);
+size_t _strlen(const char *str);
+void _puts(char *str);
+void print_rev(char *s);
+void rev_string(char *s);
+void puts2(char *str);
+void puts_half(char *str);
+void print_array(int *a, int n);
+char *_strcpy(char *dest, char *src);
+int _atoi(char *s);
