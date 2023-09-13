@@ -1,17 +1,17 @@
+0-print_name.c: File contains a function that calls another function to print a given name using a pointer to a function.
 
-equirements
-General
-Allowed editors: vi, vim, emacs
-All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
-All your files should end with a new line
-A README.md file, at the root of the folder of the project is mandatory
-Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
-You are not allowed to use global variables
-No more than 5 functions per file
-The only C standard library functions allowed are malloc, free and exit. Any use of functions like printf, puts, calloc, realloc etc… is forbidden
-You are allowed to use _putchar
-You don’t have to push _putchar.c, we will use our file. If you do it won’t be taken into account
-In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples
-The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called function_pointers.h
-Don’t forget to push your header file
-All your header files should be include guarded
+1-array_iterator.c: File contains a function that iterates through an array and calls a given function on each item using a pointer to a function.
+
+2-int_index.c: File contains a function that traverses an array and calls a given comparison function using a function pointer to find specific numbers, based on the given function to call.
+
+3-calc.h: Header file containing prototypes and structs to be used with 3-main.c, 3-get_op_func.c, and 3-op_functions.c.
+
+3-get_op_func.c: Finds the proper function from the 3-op_functions.c file to call based on the arguments passed to the 3-main.c file. The function returns a pointer to the function to call.
+
+3-main.c: The main file of a program to take arguments into main and do math on them based on the given operator inputted. The file exits with an error if the program receives the incorrect number of arguments, anything other than 4, if the get_op_func function call returns NULL, or if the expected operator argument is too long to be an operator, aka greater than 1 character excluding the null character terminating byte.
+
+3-op_functions.c: Contains five different functions that will do math on the arguments passed to them. The op_add function adds the args, op_sub subtracts the first arg from the second, op_mul multiplies the two args, op_div will divide the first arg by the second, op_mod will divide the first arg by the second and return the remainder. All arguments will be ints.
+
+function_pointers.h: Header file containing any necessary prototypes for 0-print_name.c, 1-array_iterator.c, and 2-int_index.c.
+
+100-main_opcodes.c: Function will find and print out the opcodes of the functions called in main up until the given number of bytes.
